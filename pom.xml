@@ -17,6 +17,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven-shade-plugin.version>3.1.1</maven-shade-plugin.version>
+    <tws.version>1012</tws.version>
   </properties>
 
   <dependencies>
@@ -24,19 +25,18 @@
     <dependency>
       <groupId>com.interactivebrokers</groupId>
       <artifactId>twslaunch</artifactId>
-      <version>1012</version>
+      <version>${tws.version}</version>
     </dependency>
-<!--
-    <dependency>
-      <groupId>com.interactivebrokers</groupId>
-      <artifactId>twslaunch-install4j</artifactId>
-      <version>1.10</version>
-    </dependency>-->
 
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-swing</artifactId>
+      <version>18-ea+10</version>
+    </dependency>
     <dependency>
       <groupId>com.interactivebrokers</groupId>
       <artifactId>jts4launch</artifactId>
-      <version>981</version>
+      <version>${tws.version}</version>
     </dependency>
 
   </dependencies>
